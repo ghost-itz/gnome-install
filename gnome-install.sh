@@ -15,7 +15,7 @@ grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=ArchL
 
 grub-mkconfig -o /boot/grub/grub.cfg
 
-mkinitcpio -p linux-lts
+mkinitcpio -p linux-zen
 
 systemctl enable gdm
 systemctl enable NetworkManager
